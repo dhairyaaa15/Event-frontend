@@ -2,9 +2,12 @@ import { BackgroundBeams } from "../components/BackgroundBeams"
 
 const Home = () => {
   return (
-   <>
-    <BackgroundBeams></BackgroundBeams>
-   </>
+    <>
+      <div className="w-full h-screen">
+
+        <BackgroundBeams></BackgroundBeams>
+      </div>
+    </>
   )
 }
 
