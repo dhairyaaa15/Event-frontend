@@ -1,7 +1,14 @@
 import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision";
 import orgphoto from "../image/org3.jpeg";
+import { useNavigate } from "react-router-dom";
 
 export function BackgroundBeams() {
+  
+  const navigate=useNavigate();
+  const handleButtonClick = () => {
+    navigate('/Explore');
+  };
+
   return (
     <BackgroundBeamsWithCollision>
       <div className="flex flex-col md:flex-row justify-start items-center">
@@ -20,7 +27,10 @@ export function BackgroundBeams() {
               </div>
             </div>
             <div className="mt-6 flex justify-center md:justify-start">
-              <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-4 py-2 text-sm rounded-full tracking-wide uppercase font-semibold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+              <button
+                onClick={handleButtonClick}
+                className="shadow-[inset_0_0_0_2px_#616467] text-black px-4 py-2 text-sm rounded-full tracking-wide uppercase font-semibold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200"
+              >
                 Get Started
               </button>
             </div>
