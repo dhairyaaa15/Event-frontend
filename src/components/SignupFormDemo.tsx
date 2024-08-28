@@ -51,7 +51,13 @@ export function SignupFormDemo({ onClose }: { onClose: () => void }) {
               </LabelInputContainer>
               <LabelInputContainer className="flex-1">
                 <Label htmlFor="gender">Gender</Label>
-                <Input id="gender" placeholder="Male/Female" type="text" />
+                <select
+                  id="gender"
+                  className="border border-gray-300 dark:border-gray-600 rounded-lg p-2 w-full dark:bg-black dark:text-white"
+                >
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
               </LabelInputContainer>
             </div>
 

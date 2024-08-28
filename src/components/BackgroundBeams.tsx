@@ -1,5 +1,5 @@
 import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision";
-import orgphoto from "../image/org3.jpeg";
+import orgphoto from "../image/org3.png";
 import { useNavigate } from "react-router-dom";
 
 export function BackgroundBeams() {
